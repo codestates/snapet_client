@@ -7,26 +7,27 @@ assignees: ''
 
 ---
 
-## Task Card
+### ISSUE
+- Group:  `client`, `server`, `sr`
+- Type: `bug`, `feature`, `delete`
+- Detail: fix actions from client redux
 
-**Assignee**:(본명)
+### TODO
+1. [ ] Job1
+2. [ ] Job2
+3. [ ] Job3
 
-#### Job Description
-> 작업 내용을 적어주세요
+### Estimated time
+> Pick one
+### `0.5h`
+### `1h`
+### `1.5h`
+### `2h`
+### `2.5h`
+### `3h`
 
-#### Todo
-> 해당 작업이 완성되기 위해서 완료되어햐 하는 작업 리스트를 적어주세요
-1.
-2.
-3.
-
-#### Important
-***estimated / consumed***
-Task Card 하나의 estimated time / consumed time 이 최대 3h이 넘어가지 않게 작성해 주시기 바랍니다.
-
-***Labelling***
-- estimated time: ``
-- consumed time: ``
-- page: ``, ``
-- position: `client`, `server`
-- sprint: ``
+### Labels
+- Estimated time: `E: 1h`
+- Group : `client`, `server`
+- Sprint: `Sprint__NUMBER__`
+- Urgency: `High`, `Middle`, `Low`
