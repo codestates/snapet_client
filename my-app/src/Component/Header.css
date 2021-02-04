@@ -1,0 +1,205 @@
+.header {
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    max-width: 1800px;
+}
+
+.header__logo {
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    
+    width: 415px;
+    height: 73px;
+}
+
+.header__menu {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.header__item {
+    height: 80px;
+}
+
+
+.header__links {
+    font-weight: 900;
+    color:rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.header__links:hover {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.55);
+    transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.header__links__mobile {
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.header__links__mobile:hover {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.55);
+    transition: all 0.2s ease-out;
+}
+
+.menu-icon {
+    display:none;
+}
+
+@media screen and (max-width: 960px) {
+    headerItems {
+        position: relative;
+    }
+    .header__menu {
+        display : flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 80%;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .header__menu.active {
+        background: rgb(255, 255, 255);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .header__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .header__links:hover {
+        background-color:#769DD2 ;
+        color: #fff;
+        border-radius: 0;
+    }
+    
+    .header__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: translate(25%, 50%);
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    /* ! version 1 : button ! */
+
+    /* .header__links__mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #769DD2;
+        padding: 14px 20px;
+        border: 1px solid  #769DD2;
+        transition: all 0.3s ease-out;
+    }
+
+    .header__links__mobile:hover {
+        background: #769DD2;
+        color:  rgba(255, 255, 255, 0.945);;
+        transition: 250ms;
+        border-bottom: none;
+    } */
+
+    /* ! version 2 : bars ! */
+
+    .header__links__mobile {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+        color: #769DD2;
+    }
+
+    .header__links__mobile:hover {
+        background-color:#769DD2 ;
+        color: #fff;
+        border-radius: 0;
+    }
+
+    .header__links__mobile:hover {
+        border-bottom: none;
+    }
+
+    /* ! version 2 ends here ! */
+
+
+    .header__logo {
+        justify-self: start;
+        margin-left: 20px;
+        cursor: pointer;
+        display: flex;
+        
+        width: 210px;
+        height: 60px;
+    }
+
+    .fa-times {
+        color: rgba(0, 0, 0, 0.55);
+        font-size: 2rem;
+    }
+
+    .header__links:hover {
+        border-bottom: none;
+    }
+
+}
