@@ -1,9 +1,11 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import "./common.css";
 
-import Header from "./Component/Header";
-import Main from "./Component/Main";
+import Header from "./pages/Header";
+import Main from "./pages/Main";
+import Upload from "./pages/Upload";
 
 function App() {
   return (
@@ -16,13 +18,13 @@ function App() {
           <Main />
         </Route>
 
-        <Route path="/" exact />
+        <Route component={Upload} path="/Upload" exact />
         {/* Upload */}
-        <Route path="/" exact />
+        {/* <Route path="/" exact />? */}
         {/* Mypage */}
-        <Route path="/" exact />
-        {/* Post */}
-        <Route path="/" exact />
+        {/* <Route path="/" exact />
+        Post */}
+        {/* <Route path="/" exact /> */}
         {/* Signup */}
         {/* Header */}
       </Switch>
