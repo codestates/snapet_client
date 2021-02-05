@@ -38,7 +38,14 @@
     
 }
 
-
+.uploadImg {
+    background-color: #91A1DD;
+    color: #fff;
+    border: none;    
+    padding: 12px 150px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
 .buttonLabel {
     font-size: 100px;
@@ -93,6 +100,16 @@ img {
     vertical-align: middle;
     display: inline-block
 }
+
+/* .uploadImg-container input[type="file"] {
+    background-color: #91A1DD;
+    color: #fff;
+    border: none;
+
+    padding: 12px 150px;
+    font-size: 20px;
+    margin-bottom: 10px;
+} */
 
 @media screen and (max-width : 991px) {
     .container {

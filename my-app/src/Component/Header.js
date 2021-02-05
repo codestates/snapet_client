@@ -45,6 +45,11 @@ function Header() {
                                 View Feed
                             </Link>
                         </li >
+                        <li className="header__item">
+                            <Link to='/theteam' className='header__links' onClick={closeMobileMenu}>
+                                The Team
+                            </Link>
+                        </li >
                         <li>
                             <Link to='/signin' className='header__links__mobile' onClick={closeMobileMenu}>
                                 Sign In
