@@ -1,17 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import './Button.css';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
+const STYLES = ['btn--primary', 'btn--outline'];
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ['btn--medium', 'btn--large', 'btn--mobile', 'btn--wide'];
+
+const COLOR = ['primary', 'mainButton', 'red', 'green'];
 
 export const Button = ({
     children,
     type,
     onClick,
     buttonStyle,
-    buttonSize
+    buttonSize,
+    buttonColor
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle)
         ? buttonStyle
@@ -19,14 +21,15 @@ export const Button = ({
 
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
+    const checkButtonColor = COLOR.includes(buttonColor) ? buttonColor : null;
+
     return (
-        <Link to='/signin' className='btn-mobile'>
-            <button
-                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-                onClick={onClick}
-                type={type}>
-                {children}
-            </button>
-        </Link>
-    )
-}
+        <button
+            className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`}
+            onClick={onClick}
+            type={type}
+        >
+            {children}
+        </button>
+    );
+};

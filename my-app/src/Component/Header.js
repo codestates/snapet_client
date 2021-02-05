@@ -55,7 +55,7 @@ function Header() {
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}></Link>
                         </li> */}
                     </ul>
-                        {button && <Button buttonStyle='btn--outline'>SIGN IN</Button>}
+                        
                 </div>
             </nav>
         </>
