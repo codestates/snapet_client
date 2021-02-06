@@ -74,6 +74,7 @@ function Main({
                                 {/* ----------- Button 1  ----------- */}
                                 <Link to='/dropimg'>
                                     <Button buttonSize='btn--wide' buttonColor='mainButton'>
+                                    {/* <input type="file" onchange={onChange} /> */}
                                         {buttonLabel}<br/>{buttonLabel2}
                                     </Button>
                                 </Link>
