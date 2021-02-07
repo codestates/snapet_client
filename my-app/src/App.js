@@ -1,34 +1,23 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
-import "./common.css";
+import React from 'react'
+import './App.css';
+import Header from './Component/Header';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Home from './Component/HomePage/Home'
+import TheTeam from './Component/TeamPage/Team'
 
-import Header from "./pages/Header";
-import Main from "./pages/Main";
-import Upload from "./pages/Upload";
+
 
 function App() {
   return (
-    //const headerRequired = () => setState(!login && signin)
-    <Router>
+    <Router >
       <Header />
       <Switch>
-        <Route path="/" exact>
-          {/* Main */}
-          <Main />
-        </Route>
-
-        <Route component={Upload} path="/Upload" exact />
-        {/* Upload */}
-        {/* <Route path="/" exact />? */}
-        {/* Mypage */}
-        {/* <Route path="/" exact />
-        Post */}
-        {/* <Route path="/" exact /> */}
-        {/* Signup */}
-        {/* Header */}
+        <Route path='/' exact component={Home} /> 
+        <Route path='/theteam' component={TheTeam} />
       </Switch>
     </Router>
+    // component={main}
+
   );
 }
 
