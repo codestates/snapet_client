@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./id.css";
 import { Avatar } from "@material-ui/core";
-import mockup from "../../../img/Rev 001 02.jpg";
+import mockup from "../../../img/mockup.jpg";
 
 function Id() {
   return (
