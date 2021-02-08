@@ -1,0 +1,29 @@
+.nav-bar {
+  height: 80px;
+  width: 100%;
+}
+.nav-image {
+  float: left;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.nav-body {
+  float: right;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+.nav-viewfeed {
+  line-height: 40px;
+}
+
+.nav-signin {
+  line-height: 40px;
+}
+.nav-profileimg {
+}

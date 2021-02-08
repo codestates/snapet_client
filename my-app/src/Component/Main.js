@@ -5,17 +5,26 @@ import axios from 'axios';
 import './Main.css';
 import Heading from './Heading';
 
-import background from '../img/background.png';
-import botPolygon from '../img/logo_removed.png';
-import topPolygon from '../img/logo_removed.png';
-import circle from '../img/logo_removed.png';
-import centrePolygon from '../img/logo_removed.png';
-
-
+import background from "../img/background.png";
+import botPolygon from "../img/logo_removed.png";
+import topPolygon from "../img/logo_removed.png";
+import circle from "../img/logo_removed.png";
+import centrePolygon from "../img/logo_removed.png";
 
 function Main({
-    lightBg, bottomLine, bottomLine2, lightText, lightTextDesc, headline, headline2, description, buttonLabel, buttonLabel2, img, alt, imgStart
-
+  lightBg,
+  bottomLine,
+  bottomLine2,
+  lightText,
+  lightTextDesc,
+  headline,
+  headline2,
+  description,
+  buttonLabel,
+  buttonLabel2,
+  img,
+  alt,
+  imgStart,
 }) {
 
     // * [Feat] drag and drop to upload file * //
@@ -88,20 +97,20 @@ function Main({
                                     <input type="file" onChange={onChange} />
                                     <button onClick={onClick}>제출</button>
                                 </div> */}
-                                
 
-                                <div className='bottom-line'>{bottomLine}<br />{bottomLine2}</div>
-                            </div>
-                        </div>
-                        {/* ---------- !!  dev 3 : text  ---------- !! */}
-
-
-
-                    </div>
+                <div className="bottom-line">
+                  {bottomLine}
+                  <br />
+                  {bottomLine2}
                 </div>
+              </div>
             </div>
-        </>
-    );
+            {/* ---------- !!  dev 3 : text  ---------- !! */}
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Main
+export default Main;

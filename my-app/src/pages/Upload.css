@@ -1,0 +1,58 @@
+.upload {
+  width: 100%;
+  height: 800px;
+  border: 1px solid black;
+}
+
+.upload-body {
+  margin: auto;
+  margin-top: 50px;
+  width: 900px;
+  height: 700px;
+  border: 1px solid red;
+}
+
+.upload-top {
+}
+.upload-body-top-changeImgBtn {
+}
+.upload-body-top-p {
+}
+.upload-body-bottom {
+  margin: auto;
+  margin-top: 60px;
+  width: 800px;
+  height: 550px;
+  border: 1px solid blue;
+}
+.upload-body-bottom-left {
+  float: left;
+  margin-top: 30px;
+  width: 350px;
+  height: 500px;
+  border: 1px solid green;
+}
+.upload-body-bottom-right {
+  float: right;
+  margin-top: 30px;
+  width: 400px;
+  height: 500px;
+  border: 1px solid green;
+}
+.upload-body-bottom-right-color {
+  height: 240px;
+  border: 1px solid orange;
+}
+.upload-body-bottom-right-btns {
+}
+
+.download {
+  width: 50px;
+  height: 35px;
+  border: 1px solid black;
+}
+.post-modal {
+  width: 50px;
+  height: 35px;
+  border: 1px solid black;
+}

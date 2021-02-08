@@ -1,0 +1,193 @@
+/* common.css */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+.nanumsquare {
+  font-family: "NanumSquare", sans-serif !important;
+}
+
+/* Montserrat */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap");
+
+/*나눔스퀘어라운드*/
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess */
+
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2)
+      format("woff2"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff)
+      format("woff"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2)
+      format("woff2"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff)
+      format("woff"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf)
+      format("truetype");
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2)
+      format("woff2"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff)
+      format("woff"),
+    url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf)
+      format("truetype");
+}
+/*나눔바른고딕*/
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+      format("woff"),
+    url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 300;
+  src: url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot");
+  src: url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff")
+      format("woff"),
+    url("http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf")
+      format("truetype");
+}
+
+/********* COMMON *****************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font: 13px / 140% "Montserrat", "NanumSquareRound", sans-serif;
+  color: #000;
+}
+
+table,
+tr,
+th,
+td {
+  font: 13px / 140% "Montserrat", "NanumSquareRound", sans-serif;
+  color: #000;
+  border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em; /*제목이어서 배수를 기본으로 */
+  font-weight: normal;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img,
+fieldset,
+frameset,
+iframe {
+  border: none;
+}
+
+input,
+select,
+option,
+textarea,
+button {
+  border: none;
+  background: transparent;
+  border-radius: 0; /*IOS 환경에서는 끝이 둥글게 나와서 그것을 없앤것*/
+  outline: none; /*검색창에 롤오버했을때나 클릭할때 검색창과 돋보기에 파란색 테두리가 생겨서 그걸 없애는 방법*/
+}
+
+a,
+img,
+label {
+  display: block;
+}
+
+legend, hr, caption/*헤더 비주얼이미지 콘텐츠 구분할때 구분선쓰는 경우도 있음*/, input[type=radio] {
+  /*청각정보로 들릴거라서 화면에 안보이게 처리*/
+  display: none;
+}
+
+em,
+i,
+address {
+  font-style: normal;
+}
+
+b,
+strong {
+  font-weight: normal;
+}
+
+.skip/*바로가기메뉴*/, .blind {
+  /*청각정보로만 보임 시각정보로 보이지 않음 처리하는방식 h2,a,p,div 태그등 다양한 태그에 붙을 수 있음 / 본문에도 반복적으로 나올 수 있음 display none으로 처리해도 다른곳에 효과가 들어가면 다시 보일 수 있어서 확실하게 안보이도로 2번처리 / block에서도 공간처리한건데 높이가 0이면 보이지 않음/ position absolute처리해서 위로 안보이도록 처리*/
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -6000px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
