@@ -1,0 +1,33 @@
+.heading__container { 
+    position: relative;
+    --maskX: 0;
+    --maskY: 50;
+    h1 {
+        margin-bottom: 10px;
+        font-size: 48px;
+        line-height: 1.1;
+        font-weight: 500;
+    } 
+}
+
+
+
+.heading {
+    color: rgb(0, 0, 0);
+
+    cursor: pointer;
+}
+
+.heading-clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    height: 100%;
+    color:#444444
+    ;
+    transition: all 0.8s cubic-bezier(0.165,0.84,0.44,1); 
+    // clip-path: polygon(0 0, calc(var(--maskX) * 1%) 0, calc(var(--maskY) * 1%) 100%, 0 100%);
+    clip-path: polygon(0 0,calc(var(--maskX) * 1% + (var(--maskY) - 50) * .4%) 0,calc(var(--maskX) * 1% + (var(--maskY) - 50) * -.4%) 100%,0 100%)
+}
