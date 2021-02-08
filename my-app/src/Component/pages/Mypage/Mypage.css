@@ -1,0 +1,22 @@
+.mypage-body {
+  margin: auto;
+  width: 100%;
+  height: 800px;
+  border: 1px solid black;
+}
+/* .mypage-top {
+}
+.mypage-top-left {
+}
+.mypage-top-right {
+} */
+
+.mypage-bottom {
+  width: 100%;
+  height: 600px;
+  border: 1px solid green;
+}
+.mypage-bottom-post {
+}
+.mypage-bottom-aboutme {
+}
