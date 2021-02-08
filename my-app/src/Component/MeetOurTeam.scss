@@ -1,0 +1,38 @@
+.container {
+    text-align: center;
+}
+
+.section__header {
+    font-family: 'Poppins', sans-serif;
+    max-width: 90%;
+
+    
+    h2 {
+        font-size: 2.75rem;
+
+        margin-top: 0;
+        letter-spacing: -.7px;
+        margin-bottom: 3.375rem;
+        line-height: 1.1;
+
+    }
+    position: relative;
+    --maskX: 0;
+    --maskY: 50;
+    
+}
+.section-title {
+    color: #D4BBAB;
+    cursor: pointer;
+}
+.section-title-clone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color:#f2dcca;
+    transition: all 0.8s cubic-bezier(0.165,0.84,0.44,1); 
+    // clip-path: polygon(0 0, calc(var(--maskX) * 1%) 0, calc(var(--maskY) * 1%) 100%, 0 100%);
+    clip-path: polygon(0 0,calc(var(--maskX) * 1% + (var(--maskY) - 50) * .4%) 0,calc(var(--maskX) * 1% + (var(--maskY) - 50) * -.4%) 100%,0 100%)
+}

@@ -60,14 +60,14 @@
     /* text-transform: uppercase; */
 }
 
-.heading {
+/* .heading__container {
     margin-bottom: 10px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.76);
     
-}
+} */
 
 .home__main-subtitle {
     color: rgba(0, 0, 0, 0.73);
