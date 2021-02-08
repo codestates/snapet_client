@@ -6,6 +6,7 @@ import Home from "./Component/HomePage/Home";
 import TheTeam from "./Component/TeamPage/TheTeam";
 import Mypage from "./Component/pages/Mypage/Mypage";
 import Id from "./Component/pages/Mypage/id";
+import Post from "./Component/pages/Mypage/post";
 
 function App() {
   return (
