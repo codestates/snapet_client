@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Button, button } from './Button';
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import './Main.css';
+import Heading from './Heading';
 
 import background from '../img/background.png';
 import botPolygon from '../img/logo_removed.png';
@@ -16,6 +17,8 @@ function Main({
     lightBg, bottomLine, bottomLine2, lightText, lightTextDesc, headline, headline2, description, buttonLabel, buttonLabel2, img, alt, imgStart
 
 }) {
+
+    // * [Feat] drag and drop to upload file * //
     const [file, setImage] = useState(null);
     const onChange = (e) => {
         setImage(e.target.files[0]);
@@ -30,9 +33,11 @@ function Main({
     }
 
 
+    
     return (
-
+        
         <>
+            
             <div className={'home__main-section'} >
                 <div className='container' >
 
@@ -57,11 +62,10 @@ function Main({
 
                         {/* ---------- !!  dev 2 : text  ---------- !! */}
                         <div className='col'>
-                            <div className='home__main-text-wrapper'>
+                            <div className='home__main-text-wrapper' >
 
-                                <h1 class="animate__animated animate__bounce" className='heading'>
-                                    Get your pet <br /> a perfect ID photo
-                                </h1>
+                                <Heading />
+
                                 <p
                                     className={
                                         lightTextDesc
