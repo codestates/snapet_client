@@ -5,7 +5,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Component/HomePage/Home";
 import TheTeam from "./Component/TeamPage/TheTeam";
 import Mypage from "./Component/pages/Mypage/Mypage";
-// import Id from "./Component/pages/Mypage/id";
+
+import Id from "./Component/pages/Mypage/id";
+import Post from "./Component/pages/Mypage/post";
+
+
 import Auth from './Component/Auth/Auth'
 
 
