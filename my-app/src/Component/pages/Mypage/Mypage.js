@@ -15,14 +15,18 @@ function Mypage() {
           {/* <div className="mypage-bottom-post" to="/post"> */}
           <div className="mypage-bottom">
             <Id />
-            <div className="mypage_mid">
-              <Link className="mypage_post" to={Post}>
-                Post
+            <div className="mid-container">
+              <div className="mypage_mid">
+
+                <Link className="mypage_post" to='/mypage/posts'>
+                  Posts
               </Link>
-              <Link className="mypage_aboutme" to={Aboutme}>
-                About Me
+                <Link className="mypage_aboutme" to='/mypage/about'>
+                  About Me
               </Link>
+              </div>
             </div>
+            <Post />
           </div>
         </section>
       </body>
