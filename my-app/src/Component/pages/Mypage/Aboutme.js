@@ -8,7 +8,7 @@ import Id from "./Id";
 
 function Aboutme() {
   return (
-    <div className="body">
+    <div className="aboutme">
       <section className="aboutme-head">
         {/* <div className="mypage-bottom-post" to="/post"> */}
         <div className="aboutme-id">
@@ -27,7 +27,6 @@ function Aboutme() {
                 Veritatis, laboriosam eveniet.
               </p>
               <button>edit</button>
-              <button>save</button>
             </div>
           </section>
         </div>
