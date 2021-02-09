@@ -16,7 +16,7 @@ function Posts() {
           {/* <div className="mypage-bottom-post" to="/post"> */}
           <div className="mypage-bottom">
             <Id />
-            <div className="mid-container">
+            <div className="post-container">
               {/* <div className="mypage_mid">
                 <Link className="mypage_post" to="/mypage/posts">
                   Posts
@@ -25,8 +25,15 @@ function Posts() {
                   About Me
                 </Link>
               </div> */}
+              <div className="post-row">
+                <Singlepost className="post-single" />
+                <Singlepost className="post-single" />
+                <Singlepost className="post-single" />
+                <Singlepost className="post-single" />
+                <Singlepost className="post-single" />
+                <Singlepost className="post-single" />
+              </div>
             </div>
-            <Singlepost />
           </div>
         </section>
       </div>
