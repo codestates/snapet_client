@@ -5,8 +5,6 @@ import axios from 'axios';
 import './Main.css';
 import Heading from './Heading';
 
-
-
 import background from "../img/background.png";
 import botPolygon from "../img/logo_removed.png";
 import topPolygon from "../img/logo_removed.png";
