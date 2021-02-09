@@ -21,11 +21,11 @@ function Postcontainer() {
             <div className="mypage-bottom-post" to="/post">
               {/* {windownwidth > 1440 ? singlepost 3 : flexwrap } */}
 
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
+              <SinglePost />
+              <SinglePost />
+              <SinglePost />
+              <SinglePost />
+              <SinglePost />
               <div className="single-post">
                 <img></img>
                 <p></p>
