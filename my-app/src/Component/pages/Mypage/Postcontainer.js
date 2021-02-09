@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Singlepost from "./Singlepost";
 
 import "../../Main";
-import "./Mypage.css";
+import "./Posts.css";
 
-function Mypage() {
+function Postcontainer() {
   return (
     <>
       <body className="mypage-body">
@@ -18,6 +19,13 @@ function Mypage() {
         <section className="mypage-bottom">
           <div>
             <div className="mypage-bottom-post" to="/post">
+              {/* {windownwidth > 1440 ? singlepost 3 : flexwrap } */}
+
+              {/* <SinglePost/ > */}
+              {/* <SinglePost/ > */}
+              {/* <SinglePost/ > */}
+              {/* <SinglePost/ > */}
+              {/* <SinglePost/ > */}
               <div className="single-post">
                 <img></img>
                 <p></p>
@@ -39,4 +47,4 @@ function Mypage() {
   );
 }
 
-export default Mypage;
+export default Postcontainer;

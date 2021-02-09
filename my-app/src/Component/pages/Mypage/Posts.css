@@ -1,0 +1,15 @@
+.mid-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.aboutme_mid {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
