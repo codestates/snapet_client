@@ -6,27 +6,32 @@ import Home from "./Component/HomePage/Home";
 import Auth from './Component/Auth/Auth';
 import TheTeam from "./Component/TeamPage/TheTeam";
 import Mypage from "./Component/pages/Mypage/Mypage";
-import Id from "./Component/pages/Mypage/id";
+import aboutme from "./Component/pages/Mypage/aboutme";
+// import { useStateValue } from "./Component/StateProvider";
 
+function App() {
+  // const[{user }, dispatch ] = useStateValue()
+  //   const [tocken, setTocken] = useState();
 
-  function App() {
-    // const [tocken, setTocken] = useState();
-    
-    // if (!tocken) {
-    //   return <Auth setTocken={setTocken} />
-    // }
+  //   if (!tocken) {
+  //     return <Auth setTocken={setTocken} />
+  //   }
 
   return (
-    <Router>
-      <Header />
 
+    <Router>
+      <Route path='/signin' component={Auth} /> 
+              <Header />
       <Switch>
         <Route path='/' exact component={Home} /> 
         <Route path='/theteam' component={TheTeam} />
-        <Route path='/signin' component={Auth} />
+        
+        <Route path='/mypage/posts' component={Mypage} />
+        <Route path='/mypage/about' component={aboutme} />
       </Switch>
+      
     </Router>
-    // component={main}
+
   );
 }
 
