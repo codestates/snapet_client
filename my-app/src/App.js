@@ -13,10 +13,10 @@ function App() {
   // const[{user }, dispatch ] = useStateValue()
   //   const [tocken, setTocken] = useState();
 
+
   //   if (!tocken) {
   //     return <Auth setTocken={setTocken} />
   //   }
-
   return (
 
     <Router>
@@ -28,10 +28,10 @@ function App() {
         
         <Route path='/mypage/posts' component={Mypage} />
         <Route path='/mypage/about' component={aboutme} />
+
       </Switch>
       
     </Router>
-
   );
 }
 
