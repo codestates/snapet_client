@@ -50,6 +50,11 @@ function Header() {
                                 The Team
                             </Link>
                         </li >
+                        <li className="header__item">
+                            <Link to='/mypage/posts' className='header__links' onClick={closeMobileMenu}>
+                                My Page
+                            </Link>
+                        </li >
                         <li>
                             <Link to='/signin' className='header__links__mobile' onClick={closeMobileMenu}>
                                 Sign In
