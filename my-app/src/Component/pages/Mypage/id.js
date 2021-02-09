@@ -11,7 +11,6 @@ function Id() {
       <div className="post">
         <div className="id-left">
           <Avatar style={{ height: "80px", width: "80px", }} src={mockup} />
-
           {/* 구글로그인이 들어가면 src={photo.urlPhoto} */}
         </div>
         <div className="id-right">
