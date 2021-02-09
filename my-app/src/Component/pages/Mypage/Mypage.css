@@ -1,22 +1,36 @@
-.mypage-body {
-  margin: auto;
-  width: 100%;
-  height: 800px;
-  border: 1px solid black;
-}
-/* .mypage-top {
-}
-.mypage-top-left {
-}
-.mypage-top-right {
-} */
 
-.mypage-bottom {
-  width: 100%;
-  height: 600px;
-  border: 1px solid green;
+.mid-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
 }
-.mypage-bottom-post {
+
+.aboutme_mid {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
 }
-.mypage-bottom-aboutme {
+
+
+.mypage_post {
+  padding-right: 30px;
+  outline: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.664);
 }
+.mypage_aboutme {
+  padding-left: 30px;
+  outline: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.664);
+}
+
+.mypage_aboutme:hover, .mypage_post:hover {
+  color: rgba(0, 0, 0, 0.877);
+}
+
+

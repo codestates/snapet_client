@@ -5,10 +5,12 @@ import Btn from "../components/Btn";
 import "../../App";
 import "./Main.css";
 
+
 function Main() {
   return (
     <>
       {/* <Header></Header> */}
+
       <body className="main-body">
         <div className="main-left">
           <img className="main-image" src="../main2.png" />
@@ -22,7 +24,6 @@ function Main() {
             </p>
             <span>then go far beyond the AI</span>
           </div>
-
           <div className="main-right-middle">
             <Link to="/Upload">
               <img
@@ -40,6 +41,7 @@ function Main() {
           <p className="main-right-bottom-span"></p>
         </div>
       </body>
+      
     </>
   );
 }
