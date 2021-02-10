@@ -1,1 +1,1 @@
-
+git merge --no-ff emilyoun-dev[{"/Users/emily/Desktop/snapet_client/my-app/src/App.js":"1"},{"size":1081,"mtime":1612923093862,"results":"2","hashOfConfig":"3"},{"filePath":"4","messages":"5","errorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},"ssjn5k","/Users/emily/Desktop/snapet_client/my-app/src/App.js",["6"],{"ruleId":"7","severity":1,"message":"8","line":4,"column":50,"nodeType":"9","messageId":"10","endLine":4,"endColumn":54},"no-unused-vars","'Link' is defined but never used.","Identifier","unusedVar"]

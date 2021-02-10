@@ -12,7 +12,7 @@ function Mypage() {
 
   return (
 
-      <body className="aboutme-body">
+      <div className="aboutme-body">
         <section className="aboutme-bottom">
           {/* <div className="mypage-bottom-post" to="/post"> */}
           <div className="aboutme-bottom">
@@ -44,7 +44,7 @@ function Mypage() {
             </div>
 
         </section>
-      </body>
+      </div>
 
   );
 }

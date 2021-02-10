@@ -10,7 +10,7 @@ import "./Mypage.css";
 function Mypage() {
   return (
     <>
-      <body className="mypage-body">
+      <div className="mypage-body">
         <section className="mypage-bottom">
           {/* <div className="mypage-bottom-post" to="/post"> */}
           <div className="mypage-bottom">
@@ -29,7 +29,7 @@ function Mypage() {
             <Post />
           </div>
         </section>
-      </body>
+      </div>
     </>
   );
 }

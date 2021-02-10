@@ -18,14 +18,13 @@ function App() {
   //     return <Auth setTocken={setTocken} />
   //   }
   return (
-
+    
     <Router>
       <Route path='/signin' component={Auth} /> 
               <Header />
       <Switch>
         <Route path='/' exact component={Home} /> 
         <Route path='/theteam' component={TheTeam} />
-        
         <Route path='/mypage/posts' component={Mypage} />
         <Route path='/mypage/about' component={aboutme} />
 
