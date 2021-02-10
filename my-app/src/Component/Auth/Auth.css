@@ -1,0 +1,101 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  background-image: url("../../img/option3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.invisibleLink {
+  display: block;
+  left: 55px;
+  top: 55px;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+}
+.body {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  width: 850px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.body {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+.form form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.social {
+  margin: 20px 0;
+}
+.google,
+.kakao {
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 30px;
+  width: 30px;
+}
+.form p {
+  margin-bottom: 5px;
+}
+.form input {
+  border: 2px solid #eee;
+  margin-bottom: 8px;
+  padding: 8px 20px;
+  width: 300px;
+}
+.form {
+  top: 0;
+  height: 60%;
+}
+.btn__right {
+  float: left;
+}
+.btn__left {
+  float: right;
+}
+.bottom__btn {
+  border-radius: 20px;
+  border: none;
+  background: rgba(118, 156, 210, 0.788);
+  color: #fff;
+  padding: 13px 45px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.bottom__btn:active {
+  transform: scale(0.9);
+}
+.bottom__btn:focus {
+  outline: none;
+}
+.SignIn__left {
+  float: left;
+  top: 0;
+  height: 100%;
+}
+.SignIn__left {
+  float: right;
+  top: 0;
+  height: 100%;
+}
