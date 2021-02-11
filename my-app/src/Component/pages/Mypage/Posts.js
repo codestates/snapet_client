@@ -25,10 +25,6 @@ function Posts() {
                   About Me
                 </Link>
               </div> */}
-<<<<<<< HEAD
-=======
-
->>>>>>> 621681da8dd5fa8a90287c873826f0c5c6dc95db
               <div className="post-row">
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
