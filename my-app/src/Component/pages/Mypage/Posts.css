@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-/* 
+
 .post-single {
   display: flex;
   flex-direction: column;
@@ -27,5 +27,5 @@
   /*
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: auto;
-} */
+  flex-basis: auto;*/
+}
