@@ -1,4 +1,4 @@
-.post-container {
+.feed-container {
   margin-top: 30px;
 
   display: flex;
@@ -8,15 +8,15 @@
   padding-bottom: 30px;
 }
 
-.post-row {
+.feed-row {
   width: 85%;
   margin: 0 auto;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
 }
-/* 
-.post-single {
+
+.feed-single {
   display: flex;
   flex-direction: column;
   flex: none;
@@ -27,5 +27,5 @@
   /*
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: auto;
-} */
+  flex-basis: auto;*/
+}

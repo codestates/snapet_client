@@ -52,9 +52,7 @@ function Main({
             {/* ---------- !!  dev 1 : img  ---------- !! */}
             <div className="col">
               <div className="home__main-img-wrapper">
-                <Link to="/Mypage">
-                  <img src={img} alt={alt} className="home__main-img" />
-                </Link>
+                <img src={img} alt={alt} className="home__main-img" />
               </div>
             </div>
             {/* ---------- !!  dev 1 : img  ---------- !! */}

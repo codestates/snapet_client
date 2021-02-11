@@ -26,7 +26,6 @@ function Postcontainer() {
               <SinglePost />
               <SinglePost />
               <SinglePost />
-              <SinglePost />
               <div className="single-post">
                 <img></img>
                 <p></p>
