@@ -7,7 +7,7 @@ import Auth from "./Component/Auth/Auth";
 import TheTeam from "./Component/TeamPage/TheTeam";
 import Post from "./Component/pages/Mypage/Posts";
 import Aboutme from "./Component/pages/Mypage/Aboutme";
-import Feed from "./Component/pages/Mypage/Feed";
+import Feed from "./Component/pages/Feed";
 // import { useStateValue } from "./Component/StateProvider";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
 
         <Route path="/mypage/posts" component={Post} />
         <Route path="/mypage/about" component={Aboutme} />
-        <Route path="/mypage/feed" component={Feed} />
+        <Route path="/feed" component={Feed} />
       </Switch>
     </Router>
   );
