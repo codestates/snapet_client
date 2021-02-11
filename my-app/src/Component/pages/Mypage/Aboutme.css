@@ -46,7 +46,7 @@ textarea.textvalue {
   width: 600px;
 }
 .textvalue {
-  padding: 15px;
+  padding-left: 35px;
   height: 300px;
   font-size: 30px;
 }
