@@ -17,18 +17,6 @@ function Posts() {
           <div className="mypage-bottom">
             <Id />
             <div className="post-container">
-              {/* <div className="mypage_mid">
-                <Link className="mypage_post" to="/mypage/posts">
-                  Posts
-                </Link>
-                <Link className="mypage_aboutme" to="/mypage/about">
-                  About Me
-                </Link>
-              </div> */}
-<<<<<<< HEAD
-=======
-
->>>>>>> 621681da8dd5fa8a90287c873826f0c5c6dc95db
               <div className="post-row">
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
