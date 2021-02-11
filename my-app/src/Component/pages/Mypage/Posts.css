@@ -5,31 +5,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  /* align-items: center;
-  justify-content: center; */
   padding-bottom: 30px;
-  border: 1px solid black;
 }
-/* 
-.aboutme_mid {
-  display: flex;
-  width: 800px;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
-  border: 1px solid black;
-  height: 40px;
-} */
 
 .post-row {
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
-
+/* 
 .post-single {
   display: flex;
   flex-direction: column;
@@ -41,5 +27,5 @@
   /*
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: auto;*/
-}
+  flex-basis: auto;
+} */
