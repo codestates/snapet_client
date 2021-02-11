@@ -7,9 +7,9 @@ import "./Aboutme.css";
 import Id from "./Id";
 
 function Aboutme() {
-  const [p, setIsPEdit] = useState("Lorem Ipsum");
+  // const [p, setIsPEdit] = useState("Lorem Ipsum");
   const [isinEditMode, setIsEditMode] = useState(false); //저장버튼 텍스트박스관리
-  const [textValue, settextValue] = useState("Lorem Ipsum");
+  const [textValue, settextValue] = useState("Hey, Edit here!");
   // const [IsTextBox, setIsTextBox] = useState(false);
   // const textFocus = useRef();
   // const focusOnHandler = () => {
