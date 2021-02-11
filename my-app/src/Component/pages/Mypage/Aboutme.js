@@ -1,5 +1,5 @@
 import { Divider } from "@material-ui/core";
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import "../../Main";
@@ -7,10 +7,35 @@ import "./Aboutme.css";
 import Id from "./Id";
 
 function Aboutme() {
+  const [p, setIsPEdit] = useState("Lorem Ipsum");
+  const [isinEditMode, setIsEditMode] = useState(false); //저장버튼 텍스트박스관리
+  const [textValue, settextValue] = useState("Lorem Ipsum");
+  // const [IsTextBox, setIsTextBox] = useState(false);
+  // const textFocus = useRef();
+  // const focusOnHandler = () => {
+  //   textFocus.current.focus();
+  // };
+
+  // const handlerSaveButton = () => {
+  //   setIsTextBox(true);
+  // };
+
+  const handlerTextValue = (e) => {
+    settextValue(e.target.value);
+  };
+
+  const handleEdit = () => {
+    // setIsTitleEdit(<input type="text" />);
+    // setIsPEdit(<input className="btn" type="text" />);
+    setIsEditMode(!isinEditMode);
+  };
+  const handleSave = () => {
+    setIsEditMode(!isinEditMode);
+  };
+
   return (
     <div className="aboutme">
       <section className="aboutme-head">
-        {/* <div className="mypage-bottom-post" to="/post"> */}
         <div className="aboutme-id">
           <Id />
         </div>
@@ -18,15 +43,30 @@ function Aboutme() {
         <div className="aboutme-body">
           <section className="aboutme-bottom">
             <div className="aboutme-info">
-              <h1 className="h1-title">title</h1>
-              <p className="p">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
-                Ratione modi quisquam maxime labore, dolores voluptates
-                architecto facere doloribus, <br />
-                hic et rerum mollitia deleniti pariatur alias velit obcaecati.
-                Veritatis, laboriosam eveniet.
-              </p>
-              <button>edit</button>
+              <div className="container">
+                {isinEditMode ? (
+                  <div>
+                    {/*false*/}
+                    <textarea
+                      className="textvalue"
+                      type="text"
+                      onChange={handlerTextValue}
+                      value={textValue}
+                    />
+                    <button className="btn" onClick={handleSave}>
+                      save
+                    </button>
+                  </div>
+                ) : (
+                  <div className="aboutme-edit">
+                    <div className="textvalue">{textValue}</div>
+                    {/*true*/}
+                    <button className="btn" onClick={handleEdit}>
+                      edit
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </section>
         </div>
