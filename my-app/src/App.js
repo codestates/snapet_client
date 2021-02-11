@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Header from "./Component/Header";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Component/HomePage/Home";
-import Auth from "./Component/Auth/Auth";
+
 import TheTeam from "./Component/TeamPage/TheTeam";
 import Post from "./Component/pages/Mypage/Posts";
-import Aboutme from "./Component/pages/Mypage/Aboutme";
-import Feed from "./Component/pages/Mypage/Feed";
+import Auth from "./Component/Auth/Auth";
+import Mypage from "./Component/pages/Mypage/Posts";
+import aboutme from "./Component/pages/Mypage/Aboutme";
+import feed from "./Component/pages/Feed";
 // import { useStateValue } from "./Component/StateProvider";
 
 function App() {
@@ -17,7 +19,6 @@ function App() {
   //   if (!tocken) {
   //     return <Auth setTocken={setTocken} />
   //   }
-
   return (
     <Router>
       <Route path="/signin" component={Auth} />
@@ -25,10 +26,9 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/theteam" component={TheTeam} />
-
-        <Route path="/mypage/posts" component={Post} />
-        <Route path="/mypage/about" component={Aboutme} />
-        <Route path="/mypage/feed" component={Feed} />
+        <Route path="/mypage/posts" component={Mypage} />
+        <Route path="/mypage/about" component={aboutme} />
+        <Route path="/feed" component={feed} />
       </Switch>
     </Router>
   );
