@@ -1,0 +1,31 @@
+.post-container {
+  margin-top: 30px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.post-row {
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 
+.post-single {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  flex-basis: 33.33%;
+  margin-top: 20px;
+  padding: 50px;
+  box-sizing: border-box;
+  /*
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+} */
