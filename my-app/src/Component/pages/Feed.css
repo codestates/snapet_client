@@ -1,4 +1,4 @@
-.post-container {
+.feed-container {
   margin-top: 30px;
 
   display: flex;
@@ -8,7 +8,7 @@
   padding-bottom: 30px;
 }
 
-.post-row {
+.feed-row {
   width: 85%;
   margin: 0 auto;
   justify-content: space-between;
@@ -16,7 +16,7 @@
   flex-wrap: wrap;
 }
 
-.post-single {
+.feed-single {
   display: flex;
   flex-direction: column;
   flex: none;

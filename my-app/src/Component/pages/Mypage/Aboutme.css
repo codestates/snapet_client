@@ -15,17 +15,45 @@
   align-items: center;
   justify-content: center;
   height: 500px;
-  border: 1px solid black;
 }
 .aboutme-bottom {
-  border: 1px solid red;
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  border-radius: 2rem;
+  margin-top: 50px;
+  border: 1px solid lightgrey;
+}
+.aboutme-edit {
+  margin-top: 45px;
+  height: 450px;
 }
 
 .h1-title {
-  font-size: 33px;
+  font-size: 30px;
   font-style: normal;
+  display: block;
 }
 
 .p {
-  font-size: 14px;
+  float: left;
+  font-size: 20px;
+  display: block;
+  padding-left: 15px;
+}
+textarea.textvalue {
+  margin-top: 45px;
+  width: 600px;
+}
+.textvalue {
+  padding-left: 35px;
+  height: 300px;
+  font-size: 30px;
+}
+.btn {
+  float: right;
+  font-size: 20px;
+  margin-right: 35px;
+  width: 100px;
+  height: 40px;
 }

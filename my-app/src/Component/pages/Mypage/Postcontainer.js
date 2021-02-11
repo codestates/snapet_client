@@ -1,10 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import Singlepost from "./Singlepost";
+// import React from "react";
+// import { Link } from "react-router-dom";
+// import Singlepost from "./Singlepost";
 
-import "../../Main";
-import "./Posts.css";
+// import "../../Main";
+// import "./Posts.css";
 
+<<<<<<< HEAD
 function Postcontainer() {
   return (
     <>
@@ -57,5 +58,49 @@ function Postcontainer() {
     </>
   );
 }
+=======
+// function Postcontainer() {
+//   return (
+//     <>
+//       <body className="mypage-body">
+//         <section className="mypage-top">
+//           <div className="mypage-top-left"></div>
+//           <div className="mypage-top-right">
+//             <h3 className="title-post">Post</h3>
+//             <h3 className="title-aboutme">About Me</h3>
+//           </div>
+//         </section>
+//         <section className="mypage-bottom">
+//           <div>
+//             <div className="mypage-bottom-post" to="/post">
+//               {/* {windownwidth > 1440 ? singlepost 3 : flexwrap } */}
 
-export default Postcontainer;
+//               <SinglePost />
+//               <SinglePost />
+//               <SinglePost />
+//               <SinglePost />
+//               <SinglePost />
+//               <SinglePost />
+//               <div className="single-post">
+//                 <img></img>
+//                 <p></p>
+//               </div>
+//             </div>
+//             <div className="mypage-bottom-aboutme" to="/Mypage">
+//               <div className="aboutme-info">
+//                 <h3>title</h3>
+//                 <p></p>
+//                 <button>글쓰기</button>
+//                 <button>수정하기</button>
+//                 <button>저장하기</button>
+//               </div>
+//             </div>
+//           </div>
+//         </section>
+//       </body>
+//     </>
+//   );
+// }
+>>>>>>> 234ccee7f0c4307fa45fde643bcb2a27ac8b14a4
+
+// export default Postcontainer;
