@@ -27,12 +27,12 @@ function Posts() {
               </div> */}
 
               <div className="post-row">
+                {/* <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
-                <Singlepost className="post-single" />
-                <Singlepost className="post-single" />
+                <Singlepost className="post-single" /> */}
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import './Main.css';
 import Heading from './Heading';
+import DragNDrop from './pages/DragNDrop'
 
 import background from "../img/background.png";
 import botPolygon from "../img/logo_removed.png";
@@ -41,15 +42,12 @@ function Main({
         console.log(res);
     }
 
-
     
     return (
         
         <>
-            
             <div className={'home__main-section'} >
                 <div className='container' >
-
                     <div
                         className='row home__main-row'
                         style={{
@@ -85,7 +83,7 @@ function Main({
                                     {description}
                                 </p>
                                 {/* ----------- Button 1  ----------- */}
-                                <Link to='/dropimg'>
+                                <Link to='/upload'>
                                     <Button buttonSize='btn--wide' buttonColor='mainButton'>
                                     {/* <input type="file" onchange={onChange} /> */}
                                         {buttonLabel}<br/>{buttonLabel2}

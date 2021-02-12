@@ -7,6 +7,7 @@ import Auth from './Component/Auth/Auth';
 import TheTeam from "./Component/TeamPage/TheTeam";
 import Mypage from "./Component/pages/Mypage/Mypage";
 import aboutme from "./Component/pages/Mypage/aboutme";
+import Upload from "./Component/pages/Upload.js";
 // import { useStateValue } from "./Component/StateProvider";
 
 function App() {
@@ -20,13 +21,15 @@ function App() {
   return (
     
     <Router>
-      <Route path='/signin' component={Auth} /> 
+ 
               <Header />
       <Switch>
         <Route path='/' exact component={Home} /> 
         <Route path='/theteam' component={TheTeam} />
         <Route path='/mypage/posts' component={Mypage} />
         <Route path='/mypage/about' component={aboutme} />
+        <Route path='/upload' component={Upload} />
+        <Route path='/signin' component={Auth} /> 
 
       </Switch>
       
