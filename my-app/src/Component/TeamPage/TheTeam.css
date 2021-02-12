@@ -24,8 +24,7 @@ section {
 body {
 
     color: #232323;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+
 }
 
 :after, :before {
@@ -132,7 +131,7 @@ h2 {
 
 .team {
  
-    display: -webkit-box;
+  
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
@@ -142,7 +141,6 @@ h2 {
 }
 
 .partners, .team {
-    display: -ms-flexbox;
     -webkit-box-pack: center;
 }
 
@@ -165,53 +163,40 @@ h2 {
 
 .team-member {
     max-width: 20%;
-    -webkit-box-flex: 0;
+    perspective: 1000px;
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
     padding: 0 15px;
-    position: relative;
     margin-bottom: 2.25rem;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
 }
 
 
 /*  ! CARD STARTS HERE ! */
 
-.team-member .card {
+.card {
     position: relative;
-    -webkit-transform-style: preserve-3d;
+    transition: transform 0.8s;
     transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    transition: -webkit-transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    transition: transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    transition: transform .6s cubic-bezier(.63,-.32,.4,1.39),-webkit-transform .6s cubic-bezier(.63,-.32,.4,1.39);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+
 }
 
 /*  ! CARD FRONT STARTS HERE ! */
 
 
-
-.team-member .card-back, .team-member .card-front {
+/* ? */
+.team-member:hover .card {
+    transform: rotateY(180deg);
     width: 100%;
     display: block;
 } 
 
-.team-member .card-front {
-    -webkit-transition: .6s;
-    transition: .6s;
-    -webkit-perspective: preserve-3d;
-    perspective: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0);
+
+.card-back, .card-front {
+    width: 100%;
     display: block;
+    backface-visibility: hidden;
 } 
+
 
 /*  ! MEMBER IMG STARTS HERE ! */
 
@@ -248,10 +233,6 @@ figure, ul {
     max-height: 100%;
 }
 
-/* .team-member .card-front img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-} */
 
 img {
     border-style: none;
@@ -288,24 +269,11 @@ h3 {
 
 /*  !  CARD BACK  STARTS HERE ! */
 
-.team-member .card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-transition: .6s;
-    transition: .6s;
-    -webkit-perspective: preserve-3d;
-    perspective: preserve-3d;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: rotateY(-180deg);
-    transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    transition-property: transform;
-    transition-property: transform,-webkit-transform;
+
+.card-back {
+    transform: rotateY(180deg);
+
+
 }
 
 

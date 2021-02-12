@@ -18,12 +18,12 @@ function Posts() {
             <Id />
             <div className="post-container">
               <div className="post-row">
+                {/* <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
-                <Singlepost className="post-single" />
-                <Singlepost className="post-single" />
+                <Singlepost className="post-single" /> */}
               </div>
             </div>
           </div>

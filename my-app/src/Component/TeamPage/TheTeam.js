@@ -20,7 +20,7 @@ function TheTeam() {
         <div className="team">
           <div className="team-member">
             <div className="card">
-              <div className="card-back">
+              <div className="card-front">
                 <div className="team-member__image">
                   <figure className="img-holder">
                     <img src={emily_front} alt="" />
@@ -31,7 +31,7 @@ function TheTeam() {
                   <span className="team-member__subtitle">Project Manager</span>
                 </div>
               </div>
-              <div className="card-front">
+              <div className="card-back">
                 <div className="team-member__image">
                   <figure className="img-holder">
                     <img src={emily_back} alt="" />

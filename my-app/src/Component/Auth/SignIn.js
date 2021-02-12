@@ -9,37 +9,37 @@ export default function SignIn() {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
 
+
+
+
+ 
     return (
-        <div className="form SignUp__left">
-                    <i className='close__btn btn__left'>
-                        <Link to='/' className='SignUp_close' onClick={handleClick}>
-                                    <CloseIcon />
+        <div className="form_container SignIn_container">
+                    {/* <i className='close__btn btn__right'>
+                        <Link to='/' className='SignIn_close' onClick={handleClick}>
+                            <CloseIcon />
                         </Link>
-                    </i>
-                    <form action="#">
-                        <h1>SIGN UP</h1>
+                    </i> */}
+                    <form action="#" className="form" >
+                        <h1>SIGN IN</h1>
                         <div className="middle">
-                            <p className="email">Name</p>
-                            <input type="text" className="email empty" placeholder= "User Name" />
                             <p className="email">Email</p>
-                            <input type="text" className="email empty" placeholder= "Email" />
+                            <input type="text" className="email" placeholder= 'Email'/>
                             <p className="password">Password</p>
-                            <input type="password" className="password" placeholder='Password' />
-                            <p className="password">Confirm Password</p>
                             <input type="password" className="password" placeholder='Password'/>
                         </div>
                         <div className="botom">
-                            <button className="bottom__btn">SIGN UP</button>
+                            <button className="bottom__btn">SIGN IN</button>
                         </div>
                         <div className="social">
-                            <Link to='#' className="google" onClick={handleClick}>
+                            <Link to='/google' className="google" onClick={handleClick}>
                                 <img src={google} alt=""/>
-                            </Link>
-                            <Link to='#' className="kakao" onClick={handleClick}>
-                                <img src={kakao} alt=""/>
+                                </Link>
+                            <Link to='/kakao' className="kakao" onClick={handleClick}>
+                                <img src={kakao} alt="/"/>
                             </Link>
                         </div>    
                     </form>
-                </div> 
+                </div>
     )
 }
