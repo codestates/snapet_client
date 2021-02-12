@@ -1,10 +1,12 @@
-import React, { useState, useRef } from 'react';
-import { Button, button } from './Button';
+import React, { useState } from "react";
+import { Button, button } from "./Button";
 import { Link } from "react-router-dom";
+
 import axios from 'axios';
 import './Main.css';
 import Heading from './Heading';
 import DragNDrop from './pages/DragNDrop'
+
 
 import background from "../img/background.png";
 import botPolygon from "../img/logo_removed.png";
@@ -27,6 +29,7 @@ function Main({
   alt,
   imgStart,
 }) {
+
 
     // * [Feat] drag and drop to upload file * //
     const [file, setImage] = useState(null);
@@ -92,6 +95,7 @@ function Main({
 
                                 {/* ----------- Button 2  ----------- */}
                                 {/* <div className="uploadImg-container">
+
                                     <input type="file" onChange={onChange} />
                                     <button onClick={onClick}>제출</button>
                                 </div> */}

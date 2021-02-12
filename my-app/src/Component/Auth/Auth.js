@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import SignIn from './SignIn'
@@ -52,10 +53,12 @@ const Auth = () => {
                 </button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     );
+
 }
 
-export default Auth
+export default Auth;
