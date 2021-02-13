@@ -4,6 +4,7 @@ import Id from "./Id";
 // import Aboutme from "./Aboutme";
 // import Post from "./Posts";
 import Singlepost from "./Singlepost";
+import axios from "axios";
 
 import "../../Main";
 import "./Posts.css";
@@ -18,12 +19,12 @@ function Posts() {
             <Id />
             <div className="post-container">
               <div className="post-row">
-                {/* <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
-                <Singlepost className="post-single" /> */}
+                <Singlepost className="post-single" />
+                <Singlepost className="post-single" />
               </div>
             </div>
           </div>

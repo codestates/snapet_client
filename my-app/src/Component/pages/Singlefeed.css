@@ -3,8 +3,10 @@
   /* border: 1px solid brown; */
 }
 .singlefeed-edit {
+  position: relative;
   margin-top: 45px;
   height: 450px;
+  /* border: 1px solid blue; */
 }
 .singlefeed-img {
   border-radius: 2em;
@@ -20,4 +22,26 @@
   font-size: 18px;
   border: 1px solid lightgrey;
   border-radius: 1em;
+  /* border: 1px solid blue; */
+}
+#fa-heart {
+  position: absolute;
+  top: 12px;
+  left: 370px;
+  z-index: 100;
+  float: right;
+  opacity: 70%;
+  color: lightgrey;
+}
+#singlefeed-count {
+  position: absolute;
+  top: 11px;
+  left: 410px;
+  z-index: 100;
+  float: right;
+  opacity: 70%;
+  color: lightgrey;
+  margin-top: 0px;
+  margin-right: 0px;
+  font-size: 30px;
 }

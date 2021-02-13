@@ -1,6 +1,7 @@
 import { Divider } from "@material-ui/core";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 import "../../Main";
 import "./Aboutme.css";
@@ -10,15 +11,6 @@ function Aboutme() {
   // const [p, setIsPEdit] = useState("Lorem Ipsum");
   const [isinEditMode, setIsEditMode] = useState(false); //저장버튼 텍스트박스관리
   const [textValue, settextValue] = useState("Hey, Edit here!");
-  // const [IsTextBox, setIsTextBox] = useState(false);
-  // const textFocus = useRef();
-  // const focusOnHandler = () => {
-  //   textFocus.current.focus();
-  // };
-
-  // const handlerSaveButton = () => {
-  //   setIsTextBox(true);
-  // };
 
   const handlerTextValue = (e) => {
     settextValue(e.target.value);
@@ -32,6 +24,22 @@ function Aboutme() {
   const handleSave = () => {
     setIsEditMode(!isinEditMode);
   };
+
+  // function access() {
+  //   axios
+  //     .get("https://localhost:4000/", {
+  //       headers: {
+  //         Authorization: `Bearer ${tocken}`,
+  //         "Content-Type": "application/json",
+  //       },
+  //       withCredentials: true,
+  //     })
+  //     .then((res) => {
+  //       console.log(res);
+  //       const { createdAt, userId, email } = res.data.data.userInfo;
+  //       this.setState({ userId, createdAt, email });
+  //     });
+  // }
 
   return (
     <div className="aboutme">
