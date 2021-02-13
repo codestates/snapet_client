@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import "./Id.css";
 import { Avatar } from "@material-ui/core";
 import mockup from "../../../img/profile.png";
+import axios from "axios";
+
+//axios.get사용 해서 userinfo의 img와 name 을 받아와야함
 
 function Id() {
   return (
