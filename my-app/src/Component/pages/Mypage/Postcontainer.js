@@ -1,11 +1,10 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import Singlepost from "./Singlepost";
+import React from "react";
+import { Link } from "react-router-dom";
+import Singlepost from "./Singlepost";
 
-// import "../../Main";
-// import "./Posts.css";
+import "../../Main";
+import "./Posts.css";
 
-<<<<<<< HEAD
 function Postcontainer() {
   return (
     <>
@@ -20,7 +19,6 @@ function Postcontainer() {
         <section className="mypage-bottom">
           <div>
             <div className="mypage-bottom-post" to="/post">
-<<<<<<< HEAD:my-app/src/Component/pages/Mypage/Postcontainer.js
               {/* {windownwidth > 1440 ? singlepost 3 : flexwrap } */}
 
               <SinglePost />
@@ -28,16 +26,7 @@ function Postcontainer() {
               <SinglePost />
               <SinglePost />
               <SinglePost />
-=======
-              
-                {/* {windownwidth > 1440 ? singlepost 3 : flexwrap } */}
-              
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
-              {/* <SinglePost/ > */}
->>>>>>> 621681da8dd5fa8a90287c873826f0c5c6dc95db:my-app/src/Component/pages/Mypage/post.js
+              <SinglePost />
               <div className="single-post">
                 <img></img>
                 <p></p>
@@ -58,7 +47,9 @@ function Postcontainer() {
     </>
   );
 }
-=======
+
+export default Postcontainer;
+
 // function Postcontainer() {
 //   return (
 //     <>
@@ -73,14 +64,15 @@ function Postcontainer() {
 //         <section className="mypage-bottom">
 //           <div>
 //             <div className="mypage-bottom-post" to="/post">
-//               {/* {windownwidth > 1440 ? singlepost 3 : flexwrap } */}
 
-//               <SinglePost />
-//               <SinglePost />
-//               <SinglePost />
-//               <SinglePost />
-//               <SinglePost />
-//               <SinglePost />
+//                 {/* {windownwidth > 1440 ? singlepost 3 : flexwrap } */}
+
+//               {/* <SinglePost/ > */}
+//               {/* <SinglePost/ > */}
+//               {/* <SinglePost/ > */}
+//               {/* <SinglePost/ > */}
+//               {/* <SinglePost/ > */}
+
 //               <div className="single-post">
 //                 <img></img>
 //                 <p></p>
@@ -101,6 +93,3 @@ function Postcontainer() {
 //     </>
 //   );
 // }
->>>>>>> 234ccee7f0c4307fa45fde643bcb2a27ac8b14a4
-
-// export default Postcontainer;
