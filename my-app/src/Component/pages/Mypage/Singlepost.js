@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Singlepost.css";
 import img from "../../../img/socute.jpg";
+import axios from "axios";
 
 function Singlepost() {
   const [isinEditMode, setIsEditMode] = useState(false); //저장버튼 텍스트박스관리
@@ -22,7 +23,7 @@ function Singlepost() {
   return (
     <>
       <div className="singlepost">
-        {isinEditMode ? (
+        {isinEditMode ? ( //edit이 true일때
           <div className="singlepost-edit">
             {/*false*/}
             <img className="singlepost-img" src={img}></img>
@@ -44,6 +45,7 @@ function Singlepost() {
             ></i>
           </div>
         ) : (
+          //edit이 false일때
           <div className="singlepost-edit">
             <img className="singlepost-img" src={img}></img>
             <div className="singlepost-p">{textValue}</div>
