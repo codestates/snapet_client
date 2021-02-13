@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Singlefeed from "./Singlefeed";
+import axios from "axios";
 
 import "../Main";
 import "./Feed.css";
