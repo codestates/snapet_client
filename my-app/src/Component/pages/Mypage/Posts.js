@@ -17,21 +17,13 @@ function Posts() {
           <div className="mypage-bottom">
             <Id />
             <div className="post-container">
-              {/* <div className="mypage_mid">
-                <Link className="mypage_post" to="/mypage/posts">
-                  Posts
-                </Link>
-                <Link className="mypage_aboutme" to="/mypage/about">
-                  About Me
-                </Link>
-              </div> */}
               <div className="post-row">
+                {/* <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
                 <Singlepost className="post-single" />
-                <Singlepost className="post-single" />
-                <Singlepost className="post-single" />
+                <Singlepost className="post-single" /> */}
               </div>
             </div>
           </div>

@@ -26,56 +26,39 @@ function Header() {
 
   window.addEventListener("resize", showButton);
 
-  return (
-    <>
-      <nav className="header">
-        <div className="header__container">
-          <Link to="/" className="header__logo" onClick={closeMobileMenu}>
-            {/* snapet <i className="fab fa-typo3"></i> */}
-            <img src={Logo} alt="snapet logo" />
-          </Link>
 
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "header__menu active" : "header__menu"}>
-            <li className="header__item">
-              <Link
-                to="/Feed"
-                className="header__links"
-                onClick={closeMobileMenu}
-              >
-                View Feed
-              </Link>
-            </li>
-            <li className="header__item">
-              <Link
-                to="/theteam"
-                className="header__links"
-                onClick={closeMobileMenu}
-              >
-                The Team
-              </Link>
-            </li>
-            <li className="header__item">
-              <Link
-                to="/mypage/posts"
-                className="header__links"
-                onClick={closeMobileMenu}
-              >
-                My Page
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/signin"
-                className="header__links__mobile"
-                onClick={closeMobileMenu}
-              >
-                Sign In
-              </Link>
-            </li>
-            {/* <li className="nav-item">
+                    <Link to='/' className='header__logo' onClick={closeMobileMenu}> 
+                        {/* snapet <i className="fab fa-typo3"></i> */}
+                        <img src={Logo} alt='snapet logo' />
+                    </Link>
+                    
+                    <div className="menu-icon" onClick={handleClick}>
+                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                    </div>
+                    <ul className={click ? 'header__menu active' : 'header__menu'}>
+                        <li className="header__item">
+                            <Link to='/postPage' className='header__links' onClick={closeMobileMenu}>
+                                View Feed
+                            </Link>
+                        </li >
+                        <li className="header__item">
+                            <Link to='/theteam' className='header__links' onClick={closeMobileMenu}>
+                                The Team
+                            </Link>
+                        </li >
+                        <li className="header__item">
+                            <Link to='/mypage/posts' className='header__links' onClick={closeMobileMenu}>
+                                My Page
+                            </Link>
+                        </li >
+                        <li>
+                            <Link to='/signin' className='header__links__mobile' onClick={closeMobileMenu}>
+                                Sign In
+                            </Link>
+                        </li>
+                        
+                        {/* <li className="nav-item">
+
                             <Avatar />
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}></Link>
                         </li> */}
