@@ -1,0 +1,38 @@
+/* .aboutme_mid {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 800px;
+}
+
+.aboutme-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1-title {
+  font-size: 33px;
+  font-style: normal;
+}
+
+.p {
+  font-size: 14px;
+}
+
+.aboutme_post {
+  padding-right: 30px;
+  outline: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.664);
+}
+.aboutme_aboutme {
+  padding-left: 30px;
+  outline: none;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.664);
+}
+
+/* .aboutme_post:hover, .aboutme_aboutme:hover {
+    color: rgba(0, 0, 0, 0.877);
+  } */ */
